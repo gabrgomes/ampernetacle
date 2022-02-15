@@ -1,6 +1,6 @@
 variable "name" {
   type    = string
-  default = "kubernetes-on-arm-with-oracle"
+  default = "kubernetes-on-arm-with-oracle2"
 }
 
 /*
@@ -14,12 +14,12 @@ Available flex shapes:
 
 variable "shape" {
   type    = string
-  default = "VM.Standard.A1.Flex"
+  default = "VM.Standard.E2.1.Micro"
 }
 
 variable "how_many_nodes" {
   type    = number
-  default = 4
+  default = 2
 }
 
 variable "availability_domain" {
@@ -34,5 +34,5 @@ variable "ocpus_per_node" {
 
 variable "memory_in_gbs_per_node" {
   type    = number
-  default = 6
+  default = 1
 }
